@@ -5,7 +5,9 @@
 
 **IF Rush** é um runner 3D de sessão curta criado para apresentar áreas da Informática em uma experiência rápida, visual e jogável. O projeto nasceu como uma proposta para banca/exposição, aproximando visitantes do universo do curso por meio de corrida, perguntas, ranking e interação direta.
 
-![Preview do IF Rush](docs/if-rush-preview.png)
+### ▶️ [Jogar agora em ifrush.cul4s.com](https://ifrush.cul4s.com/if-rush/)
+
+[![Preview do IF Rush](docs/if-rush-preview.png)](https://ifrush.cul4s.com/if-rush/)
 
 ## Visão Geral
 
@@ -30,13 +32,15 @@ Este repositório público funciona como vitrine do projeto. Ele mostra a propos
 - Quizzes integrados ao fluxo da partida.
 - Ranking local/online pensado para uso em evento.
 - Assets locais para reduzir dependências durante apresentações.
+- Modo offline para eventos: roda direto de um pendrive no Windows, sem instalar nada e sem internet, com o ranking salvo na própria máquina.
 
 ## Tecnologias
 
 - **JavaScript** para lógica principal do jogo.
 - **Three.js** para renderização 3D.
 - **HTML/CSS** para interface, menus e HUD.
-- **Netlify Functions** para suporte ao ranking online.
+- **Cloudflare Workers + KV** para hospedagem e ranking global online.
+- **C# / PowerShell** para o servidor local do modo offline.
 
 ## Sobre Este Repositório
 
